@@ -11,10 +11,11 @@ class PagesController extends Controller
 {
     public function about()
     {
-        $first = 'Lucas';
-        $last = 'McDaniel';
+        $people = [
+            'Micheal Jackson', 'Olivia Newton John', 'Cindi Lauper'
+        ];
 
-        return view ('pages.about', compact('first', 'last'));
+        return view ('pages.about', compact('people'));
     }
 
     public function contact()
