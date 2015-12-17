@@ -1,13 +1,12 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
+@extends('app')
 
-    <h1>About Me {{ $first }} {{ $last }}</h1>
-    <p> This is the aobu tme page that just has nonesene teststs.</p>
+@section('content')
 
-</body>
-</html>
+@if ($first == 'John')
+    <h1>Hi John</h1>
+@else
+    <h1>Else</h1>
+@endif
+<p> This is the aobu tme page that just has nonesene teststs.</p>
+
+@stop
