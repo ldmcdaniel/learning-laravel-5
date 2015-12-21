@@ -14,7 +14,6 @@ return [
     */
 
     'debug' => env('APP_DEBUG', false),
-
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -25,6 +24,7 @@ return [
     | your application so that it is used when running Artisan tasks.
     |
     */
+
 
     'url' => 'http://localhost',
 
